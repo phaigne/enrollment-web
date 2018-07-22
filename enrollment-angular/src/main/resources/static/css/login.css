@@ -1,0 +1,152 @@
+/*
+ * Login
+ */
+
+* {
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #f46b45;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #eea849, #f46b45);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #eea849, #f46b45);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.logintextfield {
+    outline: none;
+    font-size: 1.1em;
+    padding: 20px 10px 20px 10px;
+    border: 1px solid #aaa;
+    border-radius: 0.3em;
+    margin: 0 0 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    width: 100%;
+    font-weight: 600;
+}
+
+.loginradiobutton {
+    outline: none;
+    font-size: 1.1em;
+    padding: 20px 10px 20px 10px;
+    margin: 0 15px 15px 15px;
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    font-weight: 600;
+}
+
+.loginradiobutton > label {
+    font-size: 1.1em;
+}
+
+.logintextfield-invalid-tooltip {
+    position: absolute;
+    top: 67%;
+    z-index: 5;
+    display: none;
+    max-width: 100%;
+    padding: .5rem;
+    font-size: .875rem;
+    line-height: 1;
+    color: #fff;
+    background-color: rgba(240, 65, 36, 0.7);
+    border-radius: .2rem;
+}
+
+.was-validated .logintextfield:invalid~.invalid-feedback,
+.was-validated .logintextfield:invalid~.logintextfield-invalid-tooltip,
+.logintextfield.is-invalid~.invalid-feedback,
+.logintextfield.is-invalid~.logintextfield-invalid-tooltip {
+    display: block;
+}
+
+.was-validated .logintextfield:invalid,
+.logintextfield.is-invalid {
+    border-color: #F04124
+}
+
+.was-validated .logintextfield:valid,
+.logintextfield.is-valid {
+    border-color: #43ac6a
+}
+
+.loginbutton {
+    font-size: 1.1em;
+    padding: 20px 10px 20px 10px;
+    margin: 0 0 15px 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    border-width: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.loginbutton2 {
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 0px;
+    width: 50%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 18px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 6px 18px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 6px 18px -2px rgba(0, 0, 0, 0.75);
+}
+
+.loginbutton3 {
+    font-size: 1.1em;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.form-container {
+    border: 0px solid #fff;
+    border-radius: 4px;
+    padding: 60px 60px;
+    margin-top: 15vh;
+    -webkit-box-shadow: 0px 16px 21px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 16px 21px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 16px 21px -3px rgba(0, 0, 0, 0.75);
+    background: #eee;
+}
+
+.form-container-registration {
+    border: 0px solid #fff;
+    border-radius: 4px;
+    padding: 60px 60px;
+    margin-top: 5vh;
+    -webkit-box-shadow: 0px 16px 21px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 16px 21px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 16px 21px -3px rgba(0, 0, 0, 0.75);
+    background: #eee;
+    margin-bottom: 5vh;
+}
+
+.inputwithicon input[type="email"] {
+    padding-left: 50px;
+}
+
+.inputwithicon input[type="password"] {
+    padding-left: 50px;
+}
+
+.inputwithicon {
+    position: relative;
+}
+
+.inputwithicon i {
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    padding: 6px 6px;
+}
+
+.g-recaptcha {
+    display: inline-block;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- title -->
+    <title>Certification of Electronic Tax Return Preparation, Filing and/or Payment Solutions</title>
+    <!-- links -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet/less" type="text/less" href="css/bootswatch.less">
+    <link rel="stylesheet/less" type="text/less" href="css/variables.less">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <!-- scripts -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-12">
+                <form class="form-container-registration" novalidate>
+                    <h1 class="mb-3 text-center">Registration</h1>
+                    <hr class="border-primary">
+                    <p class="text-danger">Note: All label/s marked with * are required.
+                        <br> All date should be taken from the Certificate of Registration (BIR Form 2303).
+                        <br> In case there were no matches in certain fields, please update your registration details to the
+                        nearest BIR office.</p>
+                    <h5 class="font-weight-bold">Taxpayer Type</h5>
+                    <hr class="border-primary mb-2">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-12">
+                            <div class="custom-control-inline custom-radio loginradiobutton">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                                <label class="custom-control-label" for="customRadio1">Individual</label>
+                            </div>
+                            <div class="custom-control-inline custom-radio loginradiobutton">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Non-individual</label>
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-bold">Business Information</h5>
+                    <hr class="border-primary mb-4">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-7 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputEmail1" placeholder="TIN*" required>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please provide a valid TIN.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-7 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Branch Code*"
+                                    required>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please provide a valid Branch Code.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Business Name" required>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please provide your business name.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="First Name" required>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please provide your first name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Middle Name" required>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please provide your middle name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Last Name" required>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please provide your last name.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Extension Name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="font-weight-bold">Business Address Information</h5>
+                    <hr class="border-primary mb-4">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <select class="logintextfield" id="exampleFormControlSelect1" required>
+                                    <option selected hidden value="">Province</option>
+                                    <option value="2">Abra</option>
+                                    <option value="3">Agusan del Norte</option>
+                                    <option value="4">Agusan del Sur</option>
+                                    <option value="5">Aklan</option>
+                                    <option value="5">Metro Manila</option>
+                                </select>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please select a province.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <select class="logintextfield" id="exampleFormControlSelect1" required>
+                                    <option selected hidden value="">Municipality/City</option>
+                                    <option value="2">Las Pinas</option>
+                                    <option value="3">Makati</option>
+                                    <option value="4">Malabon</option>
+                                    <option value="5">Manila</option>
+                                </select>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please select a municipality/city.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <select class="logintextfield" id="exampleFormControlSelect1" required>
+                                    <option selected hidden value="">Barangay</option>
+                                    <option value="2">Dasmarinas</option>
+                                    <option value="3">East Rembo</option>
+                                    <option value="4">Forbes Park</option>
+                                    <option value="5">Guadalupe Nuevo</option>
+                                </select>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please select a barangay.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Zip Code" required>
+                                <div class="logintextfield-invalid-tooltip">
+                                    Please provide a zip code
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Street Name">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Street Name">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Street Name">
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                            <div class="form-group">
+                                <input type="text" class="logintextfield" id="exampleInputPassword1" placeholder="Street Name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-12">
+                            <div class="form-group float-right ml-3">
+                                <button type="submit" class="btn btn-warning loginbutton3 font-weight-bold">
+                                    Register
+                                </button>
+                            </div>
+                            <div class="form-group float-right">
+                                <button type="button" class="btn btn-outline-warning loginbutton3 font-weight-bold">
+                                    Back to Login
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function () {
+                        'use strict';
+                        window.addEventListener('load', function () {
+                            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                            var forms = document.getElementsByClassName('form-container-registration');
+                            // Loop over them and prevent submission
+                            var validation = Array.prototype.filter.call(forms, function (form) {
+                                form.addEventListener('submit', function (event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add('was-validated');
+                                }, false);
+                            });
+                        }, false);
+                    })();
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
